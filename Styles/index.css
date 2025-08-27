@@ -1,0 +1,150 @@
+:root {
+  --primary-color: #4e73df;
+  --secondary-color: #858796;
+  --success-color: #1cc88a;
+  --info-color: #36b9cc;
+  --warning-color: #f6c23e;
+  --danger-color: #e74a3b;
+  --light-color: #f8f9fc;
+  --dark-color: #5a5c69;
+}
+
+body {
+  background-color: #f8f9fc;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+.sidebar {
+  background: linear-gradient(180deg, var(--primary-color) 10%, #224abe 100%);
+  color: white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  z-index: 1000;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+  transition: all 0.3s;
+}
+
+.sidebar .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.sidebar .nav-link:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link.active {
+  color: #fff;
+  font-weight: 700;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-heading {
+  color: rgba(255, 255, 255, 0.4);
+  padding: 1.5rem 1rem 0.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  transition: margin-left 0.3s;
+}
+
+
+.stat-card {
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 2rem 0 rgba(58, 59, 69, 0.2);
+}
+
+.border-left-primary {
+  border-left: 4px solid var(--primary-color) !important;
+}
+
+.border-left-success {
+  border-left: 4px solid var(--success-color) !important;
+}
+
+.border-left-info {
+  border-left: 4px solid var(--info-color) !important;
+}
+
+.border-left-warning {
+  border-left: 4px solid var(--warning-color) !important;
+}
+
+.card {
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.1);
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+.chart-container {
+  position: relative;
+  height: 250px;
+}
+
+.project-card,
+.task-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 15px;
+}
+
+.project-card:hover,
+.task-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1.5rem 0 rgba(58, 59, 69, 0.2) !important;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 5px;
+}
+
+.btn-action {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+
+.task-status-badge {
+  padding: 0.4em 0.6em;
+  border-radius: 0.25rem;
+}
+
+.bg-waiting {
+  background-color: var(--warning-color);
+  color: #000;
+}
+
+.bg-in-progress {
+  background-color: var(--info-color);
+  color: #fff;
+}
+
+.bg-completed {
+  background-color: var(--success-color);
+  color: #fff;
+}
+
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
