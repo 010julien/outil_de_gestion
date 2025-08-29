@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+  .sidebar {
+    width: 80px;
+    text-align: center;
+  }
+
+  .sidebar .nav-link span {
+    display: none;
+  }
+
+  .sidebar .sidebar-brand span {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 80px;
+  }
+}
