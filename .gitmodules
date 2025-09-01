@@ -1,0 +1,3 @@
+[submodule "Pages/Projets/outil_de_gestion"]
+	path = Pages/Projets/outil_de_gestion
+	url = https://github.com/010julien/outil_de_gestion.git
